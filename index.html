@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Application</title>
+</head>
+<body>
+    <h1>Love Application</h1>
+    <p>Boy Name: {{ boy_name }}</p>
+    <p>Girl Name: {{ girl_name }}</p>
+    <p>Love Score: {{ love_score }}</p>
+    <p>Affection Level: {{ affection_level }}</p>
+    
+    {% if one_sided_love %}
+        <p>{{ boy_name }} has one-sided love for {{ girl_name }}</p>
+    {% endif %}
+
+    {% if age_compatible %}
+        <p>Age Compatibility: {{ boy_name }} and {{ girl_name }} are compatible.</p>
+    {% else %}
+        <p>Age Compatibility: {{ boy_name }} and {{ girl_name }} are not compatible.</p>
+    {% endif %}
+</body>
+</html>
